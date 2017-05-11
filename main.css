@@ -1,5 +1,5 @@
 body {
-  background-color: #FFCC00;
+  background-color: #add8e6;
   padding: 20px;
   margin: 0;
 }
@@ -32,4 +32,8 @@ ul.header li a {
 }
 .content li {
   margin-bottom: 10px;
+}
+
+.active {
+  background-color: #0099FF;
 }
