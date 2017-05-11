@@ -16,6 +16,17 @@
   <script type="text/babel">
     var destination = document.querySelector("#container");
 
+    var Home = React.createClass({
+      render: function() {
+        return (
+          <div>
+            <h2>HELLO</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat, ipsum odio impedit est ipsam, eius quidem accusamus magni corporis et alias rerum repellat ex fuga reiciendis ut dolorum saepe consequuntur.</p>
+          </div>
+        );
+      }
+    });
+
     var App = React.createClass({
       render: function() {
         return (
@@ -27,17 +38,17 @@
               <li>Contact</li>
             </ul>
             <div className="content">
-
+              <Home />
             </div>
           </div>
-        )
+        );
       }
-    })
+    });
 
     ReactDOM.render(
       <ReactRouter.Router history={ReactRouter.hashHistory}>
         <ReactRouter.Route path="/" component={App}>
-          
+
         </ReactRouter.Route>
       </ReactRouter.Router>
       ,
